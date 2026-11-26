@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&family=Onest:wght@400;600&display=swap');
+
+:root {
+  --bg: #FAF6F1;
+  --ink: #241A23;
+  --muted: #615760;
+  --line: #E4DFD7;
+  --accent: #9C5906;
+  --plum: #3E1D34;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #120C11;
+    --ink: #F2EEE7;
+    --muted: #B0A8AF;
+    --line: #322931;
+    --accent: #EDAA45;
+    --plum: #F9F4EC;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 'Onest', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+main { max-width: 640px; margin: 0 auto; padding: 48px 20px 80px; }
+.mark {
+  display: inline-block;
+  font: 500 22px/1 'Newsreader', Georgia, serif;
+  color: var(--plum);
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+.kicker {
+  margin: 0 0 8px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+h1, .en-title {
+  font: 500 40px/1.1 'Newsreader', Georgia, serif;
+  margin: 0 0 16px;
+  text-wrap: balance;
+}
+.en-title { font-size: 32px; }
+h2 { font-size: 19px; font-weight: 600; margin: 36px 0 8px; }
+h3 { font-size: 17px; font-weight: 600; margin: 24px 0 4px; }
+p { margin: 0 0 12px; }
+.date { color: var(--muted); font-size: 15px; }
+a { color: var(--accent); text-underline-offset: 3px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0 40px; }
